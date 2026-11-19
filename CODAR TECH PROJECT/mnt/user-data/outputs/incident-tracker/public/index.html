@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Incident & Drill Report Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Incident & Drill Report Tracker</h1>
+
+    <div id="summary" class="summary"></div>
+
+    <form id="incident-form">
+      <label>Date <input type="date" id="date" required></label>
+      <select id="type">
+        <option value="Drill">Drill</option>
+        <option value="Live Incident">Live Incident</option>
+      </select>
+      <input type="text" id="location" placeholder="Location (e.g. Runway 18L, Apron 3)" required>
+      <input type="number" id="responseTime" placeholder="Response time (min)" min="0" step="0.1">
+      <input type="text" id="personnel" placeholder="Personnel involved">
+      <select id="severity">
+        <option value="Minor">Minor</option>
+        <option value="Moderate">Moderate</option>
+        <option value="Major">Major</option>
+      </select>
+      <input type="text" id="outcome" placeholder="Outcome / summary">
+      <button type="submit">Add Report</button>
+    </form>
+
+    <div class="filter-bar">
+      <label>Type:
+        <select id="type-filter">
+          <option value="">All</option>
+          <option value="Drill">Drill</option>
+          <option value="Live Incident">Live Incident</option>
+        </select>
+      </label>
+      <label>Severity:
+        <select id="severity-filter">
+          <option value="">All</option>
+          <option value="Minor">Minor</option>
+          <option value="Moderate">Moderate</option>
+          <option value="Major">Major</option>
+        </select>
+      </label>
+    </div>
+
+    <table id="incident-table">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Type</th>
+          <th>Location</th>
+          <th>Response Time</th>
+          <th>Personnel</th>
+          <th>Severity</th>
+          <th>Outcome</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="incident-list"></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

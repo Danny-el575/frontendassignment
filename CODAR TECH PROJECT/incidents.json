@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "date": "2026-08-05",
+    "type": "Drill",
+    "location": "Runway 18L",
+    "responseTime": 3.2,
+    "personnel": "Crew A (4)",
+    "severity": "Minor",
+    "outcome": "Successful drill, response time within target"
+  },
+  {
+    "id": 2,
+    "date": "2026-07-22",
+    "type": "Live Incident",
+    "location": "Apron 3",
+    "responseTime": 4.8,
+    "personnel": "Crew B (5)",
+    "severity": "Moderate",
+    "outcome": "Fuel spill contained, no fire, area cleared"
+  },
+  {
+    "id": 3,
+    "date": "2026-06-10",
+    "type": "Drill",
+    "location": "Terminal 2",
+    "responseTime": 2.9,
+    "personnel": "Crew A (4), Crew C (3)",
+    "severity": "Minor",
+    "outcome": "Joint drill with terminal fire pro system test"
+  }
+]

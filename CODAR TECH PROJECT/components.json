@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "location": "Main Electrical Room",
+    "type": "Main Panel",
+    "installDate": "2023-01-15",
+    "lastInspection": "2026-08-01",
+    "status": "Operational",
+    "notes": "Central control panel for the aerosol suppression system"
+  },
+  {
+    "id": 2,
+    "location": "Electrical Shaft 1",
+    "type": "Fire Pro Generator",
+    "installDate": "2023-01-20",
+    "lastInspection": "2026-07-15",
+    "status": "Operational",
+    "notes": "DCP + CO2 aerosol canister"
+  },
+  {
+    "id": 3,
+    "location": "IT Shaft 2",
+    "type": "Smoke Detector",
+    "installDate": "2023-01-20",
+    "lastInspection": "2026-06-30",
+    "status": "Needs Maintenance",
+    "notes": "Sensitivity check overdue"
+  },
+  {
+    "id": 4,
+    "location": "Sub Station Room",
+    "type": "Heat Detector",
+    "installDate": "2023-02-05",
+    "lastInspection": "2026-08-10",
+    "status": "Operational",
+    "notes": ""
+  },
+  {
+    "id": 5,
+    "location": "AHU Room 3",
+    "type": "Sounder/Alarm",
+    "installDate": "2023-02-10",
+    "lastInspection": "2026-05-20",
+    "status": "Faulty",
+    "notes": "Alarm not triggering on test - needs replacement"
+  }
+]

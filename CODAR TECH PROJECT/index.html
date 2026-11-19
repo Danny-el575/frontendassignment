@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fire System Component Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Fire System Component Tracker</h1>
+
+    <div id="summary" class="summary"></div>
+
+    <form id="component-form">
+      <input type="text" id="location" placeholder="Location (e.g. Electrical Room 3)" required>
+      <input type="text" id="type" placeholder="Component type (e.g. Fire Pro Generator)" required>
+      <label>Install date <input type="date" id="installDate"></label>
+      <label>Last inspection <input type="date" id="lastInspection"></label>
+      <select id="status">
+        <option value="Operational">Operational</option>
+        <option value="Needs Maintenance">Needs Maintenance</option>
+        <option value="Faulty">Faulty</option>
+      </select>
+      <input type="text" id="notes" placeholder="Notes (optional)">
+      <button type="submit">Add Component</button>
+    </form>
+
+    <div class="filter-bar">
+      <label>Filter by status:
+        <select id="status-filter">
+          <option value="">All</option>
+          <option value="Operational">Operational</option>
+          <option value="Needs Maintenance">Needs Maintenance</option>
+          <option value="Faulty">Faulty</option>
+        </select>
+      </label>
+    </div>
+
+    <table id="component-table">
+      <thead>
+        <tr>
+          <th>Location</th>
+          <th>Type</th>
+          <th>Installed</th>
+          <th>Last Inspected</th>
+          <th>Status</th>
+          <th>Notes</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="component-list"></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
